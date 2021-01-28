@@ -6,6 +6,8 @@ CIS 4360-005
 
 Evan Fiordeliso
 
+---
+## Notes
 * Agility
 * Most don't need Scalability
 * CD easier in a microservice codebase as it can be easier to find the faults
@@ -39,6 +41,8 @@ Evan Fiordeliso
     * Microservices infrastructure is fractured, immature, and evolving quickly
 * The best way to convert over to microservices is to slowly increase service granularity. Start with the api, making it a macroservice, and then break out some features into miniservices, and when necessary break them up into microservices.
 
+---
+## Writeup
 For many companies and organization, the risks and costs of using a
 microservice architecture might out way the benefits. Whether to use
 microservices comes down to a case by case basis and requires some
