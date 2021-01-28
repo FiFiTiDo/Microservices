@@ -8,38 +8,35 @@ Evan Fiordeliso
 
 ---
 ## Notes
-* Agility
-* Most don't need Scalability
-* CD easier in a microservice codebase as it can be easier to find the faults
-* MSA is flexible and independent, features easy to roll out quickly
+### Granularity
 * Agility increases with granularity
 * Complexity decreases with granularity
 * Need a healthy balance in the granularity
-* Macroservice is to provide access
-* Miniservice is to improve agility
-* Microservice is for continuous delivery (CD)
-* Benefits
-    * Deploy features as quickly as they are developed
-    * Each microservice is small and independent so there is less risk with deployment
-    * Teams can work independently on their microservice/feature
-    * Due to loose coupling, each microservice can use their own technology and languages
-    * Each individual component can be scaled independently of the rest of the application
-    * Well developed applications can continue running despite part of it being nonfunctional and can recover quickly
-* Costs
-    * Technical and cultural changes need to be navigated
-    * Need proficiency in Agile and DevOps practices
-    * Microservices change how data is managed
-    * There needs to be a completely different organization which can include different funding
-    * Teams must be able to work independently
-    * The infrastructure is much more complex
-* Risks
-    * May perform poorly if not implemented properly
-    * High costs
-    * Project delays
-    * Unmet expectations
+* Types
+    * Macroservice is to provide access
+    * Miniservice is to improve agility
+    * Microservice is for continuous delivery (CD)
+### Benefits
+* Deploy features as quickly as they are developed
+* Each microservice is small and independent so there is less risk with deployment
+* Teams can work independently on their microservice/feature
+* Due to loose coupling, each microservice can use their own technology and languages
+* Each individual component can be scaled independently of the rest of the application
+* Well developed applications can continue running despite part of it being nonfunctional and can recover quickly
+### Costs/Risks
+* Technical and cultural changes need to be navigated
     * New roles, responsibilities, and organizational structures
-    * Microservices infrastructure is fractured, immature, and evolving quickly
-* The best way to convert over to microservices is to slowly increase service granularity. Start with the api, making it a macroservice, and then break out some features into miniservices, and when necessary break them up into microservices.
+    * Need proficiency in Agile and DevOps practices
+    * Teams must be able to work independently
+* Microservices change how data is managed
+* There needs to be a completely different organization which can include different funding
+* The infrastructure is much more complex
+* Microservices infrastructure is fractured, immature, and evolving quickly
+* May perform poorly if not implemented properly
+* Project delays
+* Unmet expectations
+
+The best way to convert over to microservices is to slowly increase service granularity. Start with the api, making it a macroservice, and then break out some features into miniservices, and when necessary break them up into microservices.
 
 ---
 ## Writeup
@@ -83,3 +80,30 @@ miniservices as needed and then break them up into microservices as
 needed. When done incorrectly the application can end up perfoming poorly
 and not live up to your expectations and can lead to high costs and
 project delays.
+
+---
+## Major Points
+* Agile and easily scalable
+* Independent and loosely coupled
+* The microservice architecture is not for everyone
+    * Technical and cultural challenges
+    * Time and money cost
+* Different levels of granularity (Macro, Mini, and Micro)
+
+---
+## My Opinion
+Usually when you hear about microservices you hear a lot about the successes
+of them and how flexible they are, and they truely are flexible but there
+are quite a few drawbacks to using the architecture. It's important to keep
+these in mind when decideding how to structure a project because it seems
+like it might not be right for every instance. Despite this, I believe MSA
+brings a lot of benefits including the flexibility including the technology
+each microservice runs on, the ease of deployment, and the ease of
+developing new features. Granularity size is another thing I hadn't hear too
+much about, there's a lot of talk about microservices but not quite as much
+about miniservices. These granularity sizes are another factor in the
+flexibility of this architecture allowing teams to decide what is best for
+the project. And at the end of the day, just like any other technology or
+architecture it is possible to poorly implement a microservice architecture
+so ensuring that you do your research on it is crucial before implementing
+it into a project.
