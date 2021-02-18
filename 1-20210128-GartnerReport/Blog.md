@@ -7,6 +7,15 @@ CIS 4360-005
 Evan Fiordeliso
 
 ---
+
+### Table of Contents
+* [Notes](#notes)
+* [Write-up](#write-up)
+* [Major Points](#major-points)
+* [My Opinion](#my-opinion)
+
+---
+
 ## Notes
 ### Granularity
 * Agility increases with granularity
@@ -39,7 +48,7 @@ Evan Fiordeliso
 The best way to convert over to microservices is to slowly increase service granularity. Start with the api, making it a macroservice, and then break out some features into miniservices, and when necessary break them up into microservices.
 
 ---
-## Writeup
+## Write-up
 For many companies and organization, the risks and costs of using a
 microservice architecture might out way the benefits. Whether to use
 microservices comes down to a case by case basis and requires some
