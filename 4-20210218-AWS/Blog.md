@@ -8,12 +8,12 @@ Evan Fiordeliso
 
 ---
 
-### Instructiuons
-1. Create a AWS Free Trial Account at https://aws.amazon.com/free
-2. Spin up free compute and run some ordinary program - this may require you to install software or write a program
-3. You are to write about the cloud experience and show snapshots of what you have done
-4. You are to write a few paragraphs on how cloud would aid microservices
-5. this writeup is to go in your github like a blog and you are to post your URL in this assignment.  You may be asked in class to bring up your blog and cover it in class next Thursday February 18.
+### Table Of Contents
+
+- [Exploration](#exploration)
+    - [Create EC2 Instance](#create-ec2-instance)
+    - [Setup NodeJS Hello World Program](#setup-nodejs-hello-world-program)
+- [Cloud Platforms and Microservices](#cloud-platforms-and-microservices)
 
 ---
 
@@ -41,6 +41,8 @@ Everything looked good so I decided to launch the instance and get started on ma
 
 ![Instance summary page](./Instance-Info.png)
 
+### Setup NodeJS Hello World Program
+
 One thing I forgot to note is that when I launched the instance it asked to create a public/private key pair to be able to ssh into the server. I downloaded this to my computer and setup the SSH remote information in the OpenSSH config file.
 
 ![OpenSSH config file](./VSCode-Remote.png)
@@ -49,12 +51,25 @@ As you can see in the bottom left corner of that screenshot I am also connected 
 
 ![Installing node from command line](./Installing-Node.png)
 
-### Setup NodeJS Hello World Program
-
 After that I had to setup the Node Package Manager (NPM) to be able to download and install dependencies for the hello world application. For this application I only needed one dependency and that was expressjs which is a simple web application library. I didn't show the installation process for that in this picture but it's as easy as `npm install express` after I had setup npm.
 
-
 ![Initializing the node package manager](./NPM-Init.png)
+
+The following screenshot is the basic hello world applicationm that I built. It is not exactly the same as the actual code that I used, the only thing that I changed was not hard coding the host and port in the console.log line, instead they are in variables.
+
+![Hello world code](./HelloWorld.png)
+
+I had issues with running the code becuase initially I chose port 3000 but that port wasn't configured in the EC2 instance so I had to change it to port 80. When I started the server I had an access error.
+
+![Access error](./Access-Error.png)
+
+I tried to use sudo to start the server instead but it could not find the command "node" so I looked it up online and it appears I needed to make a symbolic link for the node application into the /usr/bin folder for sudo to be able to find it.
+
+![Fixing the error](./Fixing-Error.png)
+
+Once I did that, `sudo node index.js` worked just fine and the server was able to start up as you can see in the above screenshot. As I noted above the port was hardcoded into the console.log string so while the console says it is listening on port 3000 it was actually listening on port 80. Below you can see the application in action.
+
+![Hello world page](./HelloWorld-Visible.png)
 
 ## Cloud Platforms and Microservices
 
