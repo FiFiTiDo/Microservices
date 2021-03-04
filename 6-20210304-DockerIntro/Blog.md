@@ -1,4 +1,4 @@
-# Case Study Selection
+# Introduction to Docker
 
 Assignment #6
 
