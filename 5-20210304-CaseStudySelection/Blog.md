@@ -15,16 +15,23 @@ Evan Fiordeliso
 ---
 
 ## Selected Case Study
-I've decided I want to explore case study number 13, 
-Zalando's experience with microservices in 2015.
+I've decided I want to explore the company Segment and 
+their journey from a monolith to microservices and then 
+back to a monolith.
+
+Some sources:
+* [Why Microservices?](https://segment.com/blog/why-microservices/)
+* [Goodbye Microservices](https://segment.com/blog/goodbye-microservices/)
+* [To Microservices and Back Again](https://www.infoq.com/news/2020/04/microservices-back-again/)
+* [Why Segment Returned to a Monolith from Microservices](https://www.infoq.com/news/2018/07/segment-microservices/)
 
 ### Why this study?
-I am interested in this case study because it is really
-relevant to this course based on how they strutured
-their new architecture around their business logic as
-in domain driven design. I also am interested in
-learning how their market impacts their architecture,
-whether it comes with some banefits or challenges.
-Culture is a very important part of a microservice
-architecture and I wish to explore how they achieved it
-so well.
+I think this is an interesting case study as it brings
+a different perspective from a lot of the other case
+studies on the microservice architecture. There are many
+case studies telling the story of a successful 
+transition from a monolithic architechture to a 
+microservice architecture and how it greatly improved 
+their performance in both development and execution. 
+This case study shows how a microservice architecture 
+is not always the best option and it might be better to stick to a more tradtional monolithic architecture.
